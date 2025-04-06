@@ -1,0 +1,3 @@
+Pour compiler ce dossier, il faut utiliser xetex.
+Un Makefile exite pour faciliter la compilation. Il suffit de taper "make".
+
