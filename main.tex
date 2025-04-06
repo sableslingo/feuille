@@ -1,0 +1,286 @@
+%%% ---------------
+%%% PREAMBLE
+%%% ---------------
+\documentclass[11pt,a4paper]{article}
+
+% Define geometry (without using the geometry package)
+\usepackage{geometry}
+\geometry{landscape, twocolumn, textwidth=27.5cm, textheight=19.5cm, columnsep=15mm}
+
+%\frenchspacing						% better looking spacing
+
+% Call packages we'll need
+\usepackage[french]{babel}			% french
+\usepackage{graphicx}				% images
+\usepackage{amssymb,amsmath}		% math
+\usepackage{multicol}				% three-column layout
+\usepackage{url}					% clickable links
+\usepackage{marvosym}				% symbols
+\usepackage{wrapfig}				% wrapping text around figures
+\usepackage{fontspec}			% font encoding
+\usepackage{xunicode}
+\usepackage{ragged2e}
+\usepackage{titlesec}
+\usepackage{framed}
+\usepackage{tocvsec2}
+% Customize (header and) footer
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+%\pagestyle{fancy}
+\pagestyle{empty}
+
+%\titlespacing\section{0pt}{0pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+%\titlespacing\subsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+%\titlespacing\subsubsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+
+%\newfontfamily\headingfont[]{Arial}
+%\titleformat*{\section}{\Large\bfseries\sffamily}
+%\titleformat*{\section}{\Large\headingfont}
+
+%\renewcommand{\headrulewidth}{0.0pt}	% no bar on top of page
+%\renewcommand{\footrulewidth}{0.4pt}	% bar on bottom of page
+
+%%% ---------------
+%%% DEFINITIONS
+%%% ---------------
+
+% Define separators
+\newcommand{\HorRule}[1]{\noindent\rule{\linewidth}{#1}} % Creating a horizontal rule
+\newcommand{\SepRule}{\noindent							 % Creating a separator
+						\begin{center}
+							\rule{250pt}{1pt}
+						\end{center}
+						}						
+
+% Define Title en News input
+\newcommand{\JournalName}[1]{%
+		\begin{center}	
+			%\Huge \usefont{T1}{augie}{m}{n}
+            \Large \usefont{T1}{augie}{m}{n}
+			#1%
+		\end{center}	
+		\par \normalsize \normalfont}
+		
+\newcommand{\JournalIssue}[1]{%
+		\hfill \textsc{\mydate \today, No #1}
+		\par \normalsize \normalfont}
+
+\newcommand{\NewsItem}[1]{%
+\vspace{3pt}
+\underline{\textbf{#1}}
+	%	%\usefont{T1}{augie}{m}{n} 	
+	%	\large \textbf{#1} %\vspace{3pt}
+   %     %\Large #1 \vspace{4pt}
+	%	%\par 
+   %     \normalsize \normalfont
+		  }
+		
+\newcommand{\NewsAuthor}[1]{%
+			\hfill by \textsc{#1} \vspace{4pt}
+			\par \normalfont}		
+
+%pas de numérotation des sections
+\setsecnumdepth{none}
+\setlength{\parindent}{0pt}
+%%% ---------------
+%%% BEGIN DOCUMENT
+%%% ---------------
+\begin{document}
+% Title	
+% -----
+
+
+
+
+% Other news (1)
+% -----
+%\vspace{0.5cm}
+%	\SepRule
+%\vspace{0.5cm}
+
+\textit{Rassemblement à la grotte pour la bénédiction des rameaux}
+
+\NewsItem{BÉNÉDICTION DES RAMEAUX}
+
+	\input{fais_paraitre_ton_jour}
+
+\NewsItem{ÉVANGILE} Lc 19, 28-40
+
+\NewsItem{ENTRÉE EN PROCESSION}
+
+\NewsItem{CHANT D'ENTRÉE}
+	%\section{Chant d'entrée}
+	\input{hosanna}
+
+
+% -----
+\NewsItem{PREMIÈRE LECTURE} Is 50, 4-7
+% -----
+
+\NewsItem{PSAUME} (21 (22), 8-9, 17-18a, 19-20, 22c-24a)
+\input{psaume_21}
+
+% -----
+\NewsItem{DEUXIÈME LECTURE} Ph 2 6-11
+
+\NewsItem{ACCLAMATION}
+	\input{gloire_au_christ}
+% -----
+
+\NewsItem{ÉVANGILE} PASSIOn de notre Seigneur Jésus Christ (Lc 22, 14 – 23, 56)
+
+\texttt{Chant durant la passion}  R. : Mon peuple, que t'ai-je fait ? En quoi
+t'ai-je offensé ? Réponds-moi ! Ô Dieu Saint, ô Dieu Saint, fort.
+Ô Dieu Saint, ô Dieu Saint, fort, immortel, prends pitié de nous.
+
+
+\NewsItem{HOMÉLIE}
+
+\NewsItem{PROFESSION DE FOI} 
+
+%\newpage
+
+\NewsItem{PRIÈRES UNIVERSELLES} 
+O Christ mort sur la croix, exauce notre prière
+
+\NewsItem{OFFERTOIRE} 
+%Venez à moi, vous qui portez un fardeau 
+%\begin{itemize}
+%\item[R/] Venez à moi, vous qui portez un fardeau. Venez, vous tous qui peinez. 
+%     Et moi, je vous soulagerai. Je suis le repos de vos âmes.
+%\item[1.]  Mettez-vous à mon école, car je suis doux, je suis humble de cœur. Prenez 
+%      mon joug, il est aisé et vous trouverez la paix. Mon fardeau est léger !
+%\item[2.]
+%Devant toi je tiens mon âme, comme un enfant dans les bras de sa mère. Seigneur, mon âme espère en toi ! En silence et dans la foi, j'espère le Seigneur !
+%\end{itemize}
+
+\NewsItem{PRIÈRES SUR LES OFFRANDES}
+\textit{Nous nous levons et nous répondons : }
+Que le Seigneur reçoive de vos mains ce sacrifice à la louange et à la gloire 
+de Son nom, pour notre bien et celui de toute l’Église.
+
+\NewsItem{SANCTUS}
+Saint, saint, saint, le Seigneur, Dieu de l’univers.
+Le ciel et la terre sont remplis de ta gloire. Hosanna au plus haut des cieux !
+Béni soit celui qui vient au nom du Seigneur. Hosanna au plus haut des cieux !
+
+%\begin{itemize}
+%\item[R/] Trois fois Saint, trois fois Saint, le Seigneur Dieu de l’univers. 
+%      Hosanna, hosanna (bis) au plus haut des Cieux ! 
+%\item[1.]  Le Ciel et la Terre nous chantent Ta gloire, hosanna au plus haut des Cieux. 
+%      Béni soit Celui qui vient, c’est Jésus notre Sauveur ! 
+%\end{itemize}
+
+\NewsItem{ANAMNÈSE}
+Gloire à Toi qui étais mort. Gloire à Toi qui est vivant.  
+Notre Sauveur et notre Dieu, viens, Seigneur Jésus.
+
+\NewsItem{NOTRE PÈRE}
+
+\NewsItem{AGNUS}
+
+Agneau de Dieu qui enlèves les péchés du monde, prends pitié de nous\\
+Agneau de Dieu qui enlèves les péchés du monde, prends pitié de nous\\
+Agneau de Dieu qui enlèves les péchés du monde, donne-nous la paix
+
+\NewsItem{COMMUNION}
+\input{montre_nous_ton_visage}
+
+\NewsItem{CHANT D'ENVOI}
+\input{au_coeur_de_nos_detresses}
+
+\newpage
+
+
+\NewsItem{Informations paroissiales}
+
+Les horaires des messes et des célébrations sont affichés à l’extérieur des églises, 
+sur Internet et les réseaux sociaux Facebook et Instagram.          
+
+
+
+\begin{framed}
+\begin{description}
+\item[Messe Chrismale]
+Mardi 15 avril à 18h30 à la cathédrale de Strasbourg
+\item[Célébrations de Pâques]
+~\\
+Jeudi Saint 17 avril : Messe unique à 20h à l’église Sainte-Croix\\
+Vendredi Saint 18 avril :
+\begin{itemize}
+\item[]
+Chemin de Croix à 13h30 dans l’église Saint Jean-Baptiste
+\item[]
+Célébration de la Passion à 15h à l’église Saint Jean-Baptiste
+\end{itemize}
+Samedi 19 avril              : Vigile Pascale à 20h30 à l’église Sainte-Croix\\
+Dimanche 20 avril         : Messe de Pâques à 10h à l’église Saint Jean-Baptiste
+\item[Rencontre des confirmands avec Mgr Pascal DELANNOY]
+Mardi 22 avril de 18h30 à 20h à l’Archevêché 16 Rue Brûlée, 67000 Strasbourg
+\item[Voyage en Côte d’Ivoire du 8 au 17 février 2026]
+~\\
+Mercredi 23 avril : réunion d’information concernant le voyage en Côte d’Ivoire
+organisé avec le Diocèse de Grand Bassam à un tarif attractif.
+Inscription par mail avant \underline{le 30 avril 2025} à : \texttt{paule.troestler@gmail.com} et/ou   \texttt{nathalie\_dick@yahoo.fr}
+\item[Autre]
+\end{description}
+\end{framed}
+
+
+\textbf{Répétitions des chorales}
+\begin{description}
+\item[Chorales paroissiales] : vendredi 20h15 à Sainte Croix
+\item[Groupe « Dans l’Amour de Dieu »] : samedi 16h30 à Saint Jean-Baptiste
+\end{description}
+
+\begin{framed}
+\begin{description}
+\item[Presbytère Saint Jean-Baptiste]
+~\\
+2 rue de l'école 67380 Lingolsheim 03 88 78 16 45
+\item[Permanence] Vendredi de 10h à 12h et de 17h30 à 19h
+\item[Courriel] \texttt{danielette67380@gmail.com}
+\item[site internet] \texttt{stjeanbaptistelingo.fr}
+\item[Caritas] Vestiaire ouvert le mardi de 14h à 16h
+\end{description}
+\end{framed}
+
+%         \begin{tabular}{l l l}
+%         \multicolumn{3}{c}{\textbf{St Jean-Baptiste}} \\
+%  Mardi & 11 fév. & Vêpres 18h15 - 18h30. Pas de messe \\
+%Jeudi & 13 fév. & Salut au Saint Sacrement 18h15. Messe 18h30. \\
+%    Vendredi & 14 fév. & Laudes 08h45 - 09h00. Pas de messe \\
+%        Samedi  & 15 fév. & Messe anticipée 18h00 \\
+%    Dimanche & 16 fév. & Pas de messe \\      
+%      
+%         \multicolumn{3}{c}{\textbf{Ste Croix}} \\
+%         Mercredi & 12 fév. & Pas de messe \\ 
+%         Dimanche & 16 fév.& Messe 10h30 \\
+%    
+%        \end{tabular}
+  
+
+\newpage
+
+\JournalName{Communauté de Paroisses de Lingolsheim \\
+\normalsize \textit{Notre Dame des Sables}
+\\ \large \'{E}glise Saint Jean-Baptiste
+\\  \normalsize \textit{Dimanche des Rameaux et de la Passion du Seigneur}
+\\ \large Dimanche 13 avril  2025}
+%\noindent\HorRule{3pt} \\[-0.75\baselineskip]
+%\HorRule{1pt}
+% -----
+
+% Front article
+% -----
+%\vspace{0.5cm}
+%	\SepRule
+%\vspace{0.5cm}
+
+%\begin{center}
+\begin{minipage}[h]{1.0\linewidth}
+\input{edito}
+\end{minipage}
+%\end{center}
+% -----
+\end{document} 
