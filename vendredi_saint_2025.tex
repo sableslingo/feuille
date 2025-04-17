@@ -83,11 +83,13 @@
 
 %pas de numérotation des sections
 \setsecnumdepth{none}
-\setlength{\parindent}{0pt}
+\newlength\defaultparindent
+\AtBeginDocument{\setlength\defaultparindent{\parindent}}
 %%% ---------------
 %%% BEGIN DOCUMENT
 %%% ---------------
 \begin{document}
+\setlength{\parindent}{0pt}
 % Title	
 % -----
 
@@ -240,7 +242,6 @@ Inscription par mail avant \underline{le 30 avril 2025} à : \texttt{paule.troe
 %    
 %        \end{tabular}
   
-
 \newpage
 
 \JournalName{Communauté de Paroisses de Lingolsheim \\
@@ -260,7 +261,8 @@ Inscription par mail avant \underline{le 30 avril 2025} à : \texttt{paule.troe
 
 %\begin{center}
 \begin{minipage}[h]{1.0\linewidth}
-\input{edito_vendredi_saint}
+\setlength\parindent{\defaultparindent}
+\input{edito_vendredi_saint_2025}
 \end{minipage}
 %\end{center}
 % -----
