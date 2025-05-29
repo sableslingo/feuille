@@ -1,0 +1,244 @@
+%%% ---------------
+%%% PREAMBLE
+%%% ---------------
+\documentclass[11pt,a4paper]{article}
+
+% Define geometry (without using the geometry package)
+\usepackage{geometry}
+\geometry{landscape, twocolumn, textwidth=27.5cm, textheight=19.5cm, columnsep=15mm}
+
+%\frenchspacing						% better looking spacing
+
+% Call packages we'll need
+\usepackage[french]{babel}			% french
+\usepackage{graphicx}				% images
+\usepackage{amssymb,amsmath}		% math
+\usepackage{multicol}				% three-column layout
+\usepackage{multirow}
+\usepackage{url}					% clickable links
+\usepackage{marvosym}				% symbols
+\usepackage{wrapfig}				% wrapping text around figures
+\usepackage{fontspec}			% font encoding
+\usepackage{xunicode}
+\usepackage{ragged2e}
+\usepackage{titlesec}
+\usepackage{framed}
+%\usepackage[default]{raleway}
+\usepackage{tocvsec2}
+% Customize (header and) footer
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+\usepackage{fontawesome}
+\usepackage{lipsum}
+%\pagestyle{fancy}
+\pagestyle{empty}
+\setmainfont{Carlito}
+
+%\titlespacing\section{0pt}{0pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+%\titlespacing\subsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+%\titlespacing\subsubsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+
+%\newfontfamily\headingfont[]{Arial}
+%\titleformat*{\section}{\Large\bfseries\sffamily}
+%\titleformat*{\section}{\Large\headingfont}
+
+%\renewcommand{\headrulewidth}{0.0pt}	% no bar on top of page
+%\renewcommand{\footrulewidth}{0.4pt}	% bar on bottom of page
+
+%%% ---------------
+%%% DEFINITIONS
+%%% ---------------
+
+% Define separators
+\newcommand{\HorRule}[1]{\noindent\rule{\linewidth}{#1}} % Creating a horizontal rule
+\newcommand{\SepRule}{\noindent							 % Creating a separator
+						\begin{center}
+							\rule{250pt}{1pt}
+						\end{center}
+						}						
+
+% Define Title en News input
+\newcommand{\JournalName}[1]{%
+		\begin{center}	
+			%\Huge \usefont{T1}{augie}{m}{n}
+            \Large \usefont{T1}{augie}{m}{n}
+			#1%
+		\end{center}	
+		\par \normalsize \normalfont}
+		
+\newcommand{\JournalIssue}[1]{%
+		\hfill \textsc{\mydate \today, No #1}
+		\par \normalsize \normalfont}
+
+\newcommand{\NewsItem}[1]{%
+\vspace{3pt}
+\underline{\textbf{#1}}
+	%	%\usefont{T1}{augie}{m}{n} 	
+	%	\large \textbf{#1} %\vspace{3pt}
+   %     %\Large #1 \vspace{4pt}
+	%	%\par 
+   %     \normalsize \normalfont
+		  }
+		
+\newcommand{\NewsAuthor}[1]{%
+			\hfill by \textsc{#1} \vspace{4pt}
+			\par \normalfont}		
+
+%pas de numérotation des sections
+\setsecnumdepth{none}
+\setlength{\parindent}{0pt}
+%%% ---------------
+%%% BEGIN DOCUMENT
+%%% ---------------
+\begin{document}
+
+\NewsItem{CHANT D'ENTRÉE}
+	\input{../chants/nous_sommes_le_corps_du_christ}
+\NewsItem{PRÉPARATION PÉNITENTIELLE}\\
+	\input{../kyrie/kyrie_seigneur}
+
+\NewsItem{GLORIA}
+	\input{../chants/gloria}
+
+
+% -----
+\NewsItem{1\iere{} LECTURE} Ac 7, 55-60
+% -----
+
+\NewsItem{PSAUME} Ps 96 (97), 1-2b, 6.7c, 9
+
+\input{../psaumes/psaume_96}
+
+% -----
+\NewsItem{2\ieme{} LECTURE} Ap 22, 12-14.16-17.20
+
+\NewsItem{ÉVANGILE} Jn 17, 20-26
+
+\NewsItem{HOMÉLIE}
+
+\NewsItem{PROFESSION DE FOI} 
+
+%\newpage
+
+\NewsItem{PRIÈRES UNIVERSELLES} 
+Entends nos prières entends nos voix entends nos prières monter vers toi.
+
+\NewsItem{OFFERTOIRE} 
+
+\NewsItem{PRIÈRES SUR LES OFFRANDES}
+\textit{Nous nous levons et nous répondons : }
+Que le Seigneur reçoive de vos mains ce sacrifice à la louange et à la gloire 
+de Son nom, pour notre bien et celui de toute l’Église.
+
+\NewsItem{SANCTUS}
+\input{../sanctus/tu_es_saint}
+
+%\begin{itemize}
+%\item[R/] Trois fois Saint, trois fois Saint, le Seigneur Dieu de l’univers. 
+%      Hosanna, hosanna (bis) au plus haut des Cieux ! 
+%\item[1.]  Le Ciel et la Terre nous chantent Ta gloire, hosanna au plus haut des Cieux. 
+%      Béni soit Celui qui vient, c’est Jésus notre Sauveur ! 
+%\end{itemize}
+
+\NewsItem{ANAMNÈSE}
+\input{../anamnese/gloire_a_toi}
+
+\NewsItem{NOTRE PÈRE}
+
+\NewsItem{AGNUS}
+
+Agneau de Dieu qui enlèves le péché du monde, prends pitié de nous (bis)\\
+Agneau de Dieu qui enlèves le péché du monde, donne-nous la paix
+
+\NewsItem{COMMUNION}
+\input{../chants/venez_approchons}
+
+\NewsItem{CHANT D'ENVOI}
+\input{../chants/rejouis_toi_marie_mere_du_christ}
+%\input{../chants/esprit_de_lumiere}
+
+\newpage
+
+
+\NewsItem{Intentions de messe}
+\begin{itemize}
+\item[\Cross]
+Nicolas RINN, François HOLDER. Familles RIN et HOLDER.
+\item[\Cross]
+Maurice LESSINGER
+\end{itemize}
+
+\NewsItem{Informations paroissiales}
+
+%\begin{framed}
+\begin{tabular} {lcp{8cm}}
+\multicolumn{3}{c}{\textbf{Saint Jean-Baptiste} } \\ \hline
+Mardi    & 03 juin : & Vêpres 18h15. Messe 18h30 \\ \hline
+Jeudi    & 05 juin : & 
+Exposition du Saint Sacrement à 16h00. Adoration. Salut au Saint Sacrement à 18h15. Messe à 18h30 
+ \\ \hline
+Vendredi & 06 juin : & Laudes 08h45. Messe 09h00 \\ \hline
+Samedi   & 07 juin : & Messe anticipée 18h00 \\ \hline
+Dimanche & 08 juin : & \emph{Pentecôte} \textit{Profession de foi} Messe 10h00 \\ \hline
+\multicolumn{3}{c}{\textbf{Sainte Croix} } \\ \hline
+Mercredi & 04 juin : & Messe 09h00 \\ \hline
+Dimanche & 08 juin : & pas de messe \\ \hline
+\end{tabular}
+
+\begin{framed}
+\begin{tabular} {lcp{8cm}}
+\multicolumn{3}{c}{\textbf{Saint Jean-Baptiste} } \\
+Dimanche & 01 juin : & 16h00 Concert Spirituel avec Véronique REINBOLD-WENDLING et Estelle GERTHOFFERT (orgue). Entrée libre. Plateau.
+\end{tabular}
+\end{framed}
+%\end{framed}
+
+
+\NewsItem{Répétitions des chorales}
+\begin{description}
+\item[Chorales paroissiales] : vendredi 20h15 à Sainte Croix
+\item[Groupe « Dans l’Amour de Dieu »] : samedi 16h30 à Saint Jean-Baptiste
+\end{description}
+
+\input{../footer}
+
+%         \begin{tabular}{l l l}
+%         \multicolumn{3}{c}{\textbf{St Jean-Baptiste}} \\
+%  Mardi & 11 fév. & Vêpres 18h15 - 18h30. Pas de messe \\
+%Jeudi & 13 fév. & Salut au Saint Sacrement 18h15. Messe 18h30. \\
+%    Vendredi & 14 fév. & Laudes 08h45 - 09h00. Pas de messe \\
+%        Samedi  & 15 fév. & Messe anticipée 18h00 \\
+%    Dimanche & 16 fév. & Pas de messe \\      
+%      
+%         \multicolumn{3}{c}{\textbf{Ste Croix}} \\
+%         Mercredi & 12 fév. & Pas de messe \\ 
+%         Dimanche & 16 fév.& Messe 10h30 \\
+%    
+%        \end{tabular}
+  
+
+\newpage
+
+\JournalName{Communauté de Paroisses de Lingolsheim \\
+\normalsize \textit{Notre Dame des Sables}
+\\ \large \'{E}glise Saint Jean-Baptiste
+\\  \normalsize \textit{7\ieme{} Dimanche de Pâques - Année C}
+\\ \large Samedi 31 mai  2025}
+%\noindent\HorRule{3pt} \\[-0.75\baselineskip]
+%\HorRule{1pt}
+% -----
+
+% Front article
+% -----
+%\vspace{0.5cm}
+%	\SepRule
+%\vspace{0.5cm}
+
+%\begin{center}
+\begin{minipage}[h]{1.0\linewidth}
+%\input{edito}
+\lipsum[1-3]
+\end{minipage}
+%\end{center}
+% -----
+\end{document} 
