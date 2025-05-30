@@ -69,6 +69,12 @@
 \newcommand{\JournalIssue}[1]{%
 		\hfill \textsc{\mydate \today, No #1}
 		\par \normalsize \normalfont}
+\newcommand*{\chants}{../chants}
+\newcommand*{\kyrie}{../kyrie}
+\newcommand*{\psaumes}{../psaumes}
+\newcommand*{\sanctus}{../sanctus}
+\newcommand*{\anamnese}{../anamnese}
+\newcommand*{\footer}{..}
 
 \newcommand{\NewsItem}[1]{%
 \vspace{3pt}
@@ -93,12 +99,12 @@
 \begin{document}
 
 \NewsItem{CHANT D'ENTRÉE}
-	\input{../chants/nous_sommes_le_corps_du_christ}
+	\input{\chants/nous_sommes_le_corps_du_christ}
 \NewsItem{PRÉPARATION PÉNITENTIELLE}\\
-	\input{../kyrie/kyrie_seigneur}
+	\input{\kyrie/kyrie_seigneur}
 
 \NewsItem{GLORIA}
-	\input{../chants/gloria}
+	\input{\chants/gloria}
 
 
 % -----
@@ -107,7 +113,7 @@
 
 \NewsItem{PSAUME} Ps 96 (97), 1-2b, 6.7c, 9
 
-\input{../psaumes/psaume_96}
+\input{\psaumes/psaume_96}
 
 % -----
 \NewsItem{2\ieme{} LECTURE} Ap 22, 12-14.16-17.20
@@ -131,7 +137,7 @@ Que le Seigneur reçoive de vos mains ce sacrifice à la louange et à la gloire
 de Son nom, pour notre bien et celui de toute l’Église.
 
 \NewsItem{SANCTUS}
-\input{../sanctus/tu_es_saint}
+\input{\sanctus/tu_es_saint}
 
 %\begin{itemize}
 %\item[R/] Trois fois Saint, trois fois Saint, le Seigneur Dieu de l’univers. 
@@ -141,7 +147,7 @@ de Son nom, pour notre bien et celui de toute l’Église.
 %\end{itemize}
 
 \NewsItem{ANAMNÈSE}
-\input{../anamnese/gloire_a_toi}
+\input{\anamnese/gloire_a_toi}
 
 \NewsItem{NOTRE PÈRE}
 
@@ -151,11 +157,11 @@ Agneau de Dieu qui enlèves le péché du monde, prends pitié de nous (bis)\\
 Agneau de Dieu qui enlèves le péché du monde, donne-nous la paix
 
 \NewsItem{COMMUNION}
-\input{../chants/venez_approchons}
+\input{\chants/venez_approchons}
 
 \NewsItem{CHANT D'ENVOI}
-\input{../chants/rejouis_toi_marie_mere_du_christ}
-%\input{../chants/esprit_de_lumiere}
+\input{\chants/rejouis_toi_marie_mere_du_christ}
+%\input{\chants/esprit_de_lumiere}
 
 \newpage
 
@@ -201,7 +207,7 @@ Dimanche & 01 juin : & 16h00 Concert Spirituel avec Véronique REINBOLD-WENDLING
 \item[Chorales paroissiales] : vendredi 20h15 à Sainte Croix
 \end{description}
 
-\input{../footer}
+\input{\footer/footer}
 
 %         \begin{tabular}{l l l}
 %         \multicolumn{3}{c}{\textbf{St Jean-Baptiste}} \\
