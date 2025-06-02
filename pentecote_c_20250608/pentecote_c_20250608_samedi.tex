@@ -70,7 +70,7 @@
 		\hfill \textsc{\mydate \today, No #1}
 		\par \normalsize \normalfont}
 \newcommand*{\chants}{../chants}
-\newcommand*{\messe}{../messe_grace}
+\newcommand*{\messe}{../messe_bienveillance}
 \newcommand*{\pu}{../pu}
 \newcommand*{\psaumes}{../psaumes}
 \newcommand*{\footer}{..}
@@ -88,6 +88,8 @@
 \newcommand{\NewsAuthor}[1]{%
 			\hfill by \textsc{#1} \vspace{4pt}
 			\par \normalfont}		
+
+\graphicspath{{../images/}}
 
 %pas de numérotation des sections
 \setsecnumdepth{none}
@@ -110,11 +112,8 @@
 \NewsItem{1\iere{} LECTURE} Ac 2, 1-11
 % -----
 
-\NewsItem{CHANT DE MÉDITATION}
-\input{\chants/que_ma_bouche_chante_ta_louange}
-%\NewsItem{PSAUME} Ps 96 (97), 1-2b, 6.7c, 9
-%
-%\input{\psaumes/psaume_96}
+\NewsItem{PSAUME}
+\input{\psaumes/psaume_103}
 
 % -----
 \NewsItem{2\ieme{} LECTURE} Rm 8, 8-17
@@ -133,7 +132,7 @@
 \NewsItem{PRIÈRES UNIVERSELLES} 
 \input{\pu/pour_les_hommes_et_pour_les_femmes}
 
-\NewsItem{OFFERTOIRE}  Esprit de Lumière, Esprit créateur.
+\NewsItem{OFFERTOIRE}
 
 \NewsItem{PRIÈRES SUR LES OFFRANDES}
 \textit{Nous nous levons et nous répondons : }
@@ -144,12 +143,11 @@ de Son nom, pour notre bien et celui de toute l’Église.
 \input{\messe/sanctus}
 
 \NewsItem{ANAMNÈSE}
-%\input{\messe/anamnese}
-Nous proclamons ta mort, Seigneur ressuscité Nous attendons ta venue dans la gloire.
+\input{\messe/anamnese}
 
 \NewsItem{NOTRE PÈRE}
 
-\NewsItem{AGNUS}
+\NewsItem{AGNUS} \\
 \input{\messe/agnus}
 
 \NewsItem{COMMUNION}
