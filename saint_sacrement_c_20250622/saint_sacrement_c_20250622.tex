@@ -1,0 +1,233 @@
+%%% ---------------
+%%% PREAMBLE
+%%% ---------------
+\documentclass[french,11pt,a4paper]{article}
+
+% Define geometry (without using the geometry package)
+\usepackage{geometry}
+\geometry{landscape, twocolumn, textwidth=27.5cm, textheight=19.5cm, columnsep=20mm}
+
+%\frenchspacing						% better looking spacing
+
+% Call packages we'll need
+\usepackage{graphicx}				% images
+\usepackage{amssymb,amsmath}		% math
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{url}					% clickable links
+\usepackage{marvosym}				% symbols
+\usepackage{wrapfig}				% wrapping text around figures
+\usepackage{fontspec}			% font encoding
+\usepackage{xunicode}
+\usepackage{phonenumbers}
+\usepackage[hidelinks]{hyperref}
+\usepackage{ragged2e}
+\usepackage{titlesec}
+\usepackage{framed}
+%\usepackage[default]{raleway}
+\usepackage{tocvsec2}
+% Customize (header and) footer
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+\usepackage{fontawesome}
+\usepackage{lipsum}
+\usepackage{babel}
+%\pagestyle{fancy}
+\pagestyle{empty}
+\setmainfont{Carlito}
+
+%\titlespacing\section{0pt}{0pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+%\titlespacing\subsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+%\titlespacing\subsubsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+
+%\newfontfamily\headingfont[]{Arial}
+%\titleformat*{\section}{\Large\bfseries\sffamily}
+%\titleformat*{\section}{\Large\headingfont}
+
+%\renewcommand{\headrulewidth}{0.0pt}	% no bar on top of page
+%\renewcommand{\footrulewidth}{0.4pt}	% bar on bottom of page
+
+%%% ---------------
+%%% DEFINITIONS
+%%% ---------------
+
+% Define separators
+
+% Define Title en News input
+\newcommand{\JournalName}[1]{%
+		\begin{center}
+			%\Huge \usefont{T1}{augie}{m}{n}
+            \Large \usefont{T1}{augie}{m}{n}
+			#1%
+		\end{center}
+		\par \normalsize \normalfont}
+
+\newcommand*{\chants}{../chants}
+\newcommand*{\messe}{../messe_bienveillance}
+\newcommand*{\pu}{../pu}
+\newcommand*{\psaumes}{../psaumes}
+\newcommand*{\footer}{..}
+
+\newcommand{\NewsItem}[1]{%
+\vspace{3pt}
+\underline{\textbf{#1}}
+	%	%\usefont{T1}{augie}{m}{n}
+	%	\large \textbf{#1} %\vspace{3pt}
+   %     %\Large #1 \vspace{4pt}
+	%	%\par
+   %     \normalsize \normalfont
+		  }
+
+\newcommand{\NewsAuthor}[1]{%
+			\hfill by \textsc{#1} \vspace{4pt}
+			\par \normalfont}
+
+\graphicspath{{../images/}}
+
+%pas de numérotation des sections
+\setsecnumdepth{none}
+\setlength{\parindent}{0pt}
+%%% ---------------
+%%% BEGIN DOCUMENT
+%%% ---------------
+\begin{document}
+
+\NewsItem{CHANT D'ENTRÉE}
+	\input{\chants/rassembles_dans_ta_maison}
+
+\NewsItem{PRÉPARATION PÉNITENTIELLE} \\
+	\input{\messe/kyrie}
+
+\NewsItem{GLORIA}
+	\input{\messe/gloria}
+
+
+% -----
+\NewsItem{1\iere{} LECTURE} Gn 14, 18-20
+% -----
+
+\NewsItem{PSAUME}
+\input{\psaumes/psaume_109}
+
+% -----
+\NewsItem{2\ieme{} LECTURE} 1 Co 11, 23-26
+
+\NewsItem{SÉQUENCE}
+
+\NewsItem{ACCLAMATION}
+\input{\messe/alleluia}
+
+\NewsItem{ÉVANGILE} Lc 9, 11b-17
+
+\NewsItem{HOMÉLIE}
+
+\NewsItem{PROFESSION DE FOI}
+Nous croyons en Dieu, Il nous a montré qu’Il sait nous aimer comme Père !
+
+%\newpage
+
+\NewsItem{PRIÈRES UNIVERSELLES}
+\input{\pu/o_pere_fais_de_nous}
+
+\NewsItem{OFFERTOIRE}
+
+\NewsItem{PRIÈRES SUR LES OFFRANDES}
+\textit{Nous nous levons et nous répondons : }
+Que le Seigneur reçoive de vos mains ce sacrifice à la louange et à la gloire
+de Son nom, pour notre bien et celui de toute l’Église.
+
+\NewsItem{SANCTUS}
+\input{\messe/sanctus}
+
+\NewsItem{ANAMNÈSE}
+\input{\messe/anamnese}
+
+\NewsItem{NOTRE PÈRE}
+
+\NewsItem{AGNUS} \\
+\input{\messe/agnus}
+
+\NewsItem{COMMUNION}
+\input{\chants/comme_lui}
+
+\NewsItem{ANNONCES PAROISSIALES}
+
+\NewsItem{CHANT D'ENVOI}
+\input{\chants/peuple_de_freres}
+
+\newpage
+
+
+\NewsItem{Intentions de messe}
+\begin{itemize}
+\item[\Cross]
+Les âmes du purgatoire de la famille GENNETAY
+\end{itemize}
+
+\NewsItem{Informations paroissiales}
+
+\begin{tabular} {lcp{9cm}}
+\multicolumn{3}{c}{\textbf{Saint Jean-Baptiste} } \\ \hline
+Mardi    & 24 juin  & Vêpres 18h15. Messe 18h30 \\ \hline
+Jeudi    & 26 juin  &
+Exposition du Saint Sacrement à 16h00. Adoration. Salut au Saint Sacrement à 18h15. Messe à 18h30 
+ \\ \hline
+Vendredi & 27 juin  & Laudes 08h45. Messe 09h00 \\ \hline
+Samedi   & 28 juin  & Messe anticipée 18h00 \\ \hline
+Dimanche & 29 juin  & Messe 10h00 \emph{Saints Pierre et Paul, Apôtres} \\ \hline
+\multicolumn{3}{c}{\textbf{Sainte Croix} } \\ \hline
+Mercredi & 25 juin  & Messe 09h00.
+%\newline \Cross{} \textbf{Enterrement}  14h30 Marie-Claire Noël
+\\ \hline
+Dimanche  & 29 juin  & Pas de messe\\ \hline
+%\multicolumn{3}{c}{\textbf{Résidence Landsberg (3 rue Jean Monnet)} } \\ \hline
+%Mercredi & 04 juin : & Messe 10h45 \\ \hline
+\end{tabular}
+
+\begin{framed}
+\begin{tabular} {lcp{8cm}}
+\multicolumn{3}{c}{\textbf{Saint Jean-Baptiste} } \\
+Mercredi & 25 juin  & 20h00. Réunion des personnes qui distribuent la communion  \\
+Samedi & 28 juin  & 19h15. Foyer St Joseph. \textbf{Soirée tartes flambées} pour fêter la fin de l'année liturgique.
+Réservation Claire DERRENDINGER \phonenumber[country=FR]{0621465131} \href{mailto:c.derrendinger@gmail.com}{c.derrendinger@gmail.com} \\
+%\multicolumn{3}{c}{\textbf{Foyer Oberlin} } \\
+%Vendredi & 13 juin  & 20h00 - 21h00 \textbf{Nuit des veilleurs}. Venez prier avec l'ACAT pour les victimes des persécutions.
+\end{tabular}
+\end{framed}
+
+\emph{Nous recherchons des personnes pour nous soutenir au \textbf{secrétariat}. Venez participer à la vie de la paroisse !}
+
+\NewsItem{Répétitions des chorales}
+\begin{description}
+\item[Chorales paroissiales] : reprise le vendredi 05 septembre (20h15 à Ste Croix)
+%\item[Chorales paroissiales] : vendredi 20h15 à Sainte Croix
+\end{description}
+
+\input{\footer/footer}
+
+\newpage
+
+\JournalName{Communauté de Paroisses de Lingolsheim \\
+\normalsize \textit{Notre Dame des Sables}
+%\\ \large \'{E}glise Saint Jean-Baptiste
+\\  \normalsize \textit{Le Saint Sacrement du corps et du sang du Christ}
+\\ \large Dimanche 22 juin  2025}
+%\noindent\HorRule{3pt} \\[-0.75\baselineskip]
+%\HorRule{1pt}
+% -----
+
+% Front article
+% -----
+%\vspace{0.5cm}
+%	\SepRule
+%\vspace{0.5cm}
+
+%\begin{center}
+\begin{minipage}[h]{1.0\linewidth}
+\setlength{\parindent}{1em}
+%\input{edito}
+\lipsum[1-3]
+\end{minipage}
+%\end{center}
+% -----
+\end{document}
