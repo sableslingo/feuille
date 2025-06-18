@@ -1,0 +1,187 @@
+%%% ---------------
+%%% PREAMBLE
+%%% ---------------
+\documentclass[french,11pt,a4paper]{article}
+
+% Define geometry (without using the geometry package)
+\usepackage{geometry}
+\geometry{landscape, twocolumn, textwidth=27.5cm, textheight=19.5cm, columnsep=20mm}
+
+%\frenchspacing						% better looking spacing
+
+% Call packages we'll need
+\usepackage{graphicx}				% images
+\usepackage{amssymb,amsmath}		% math
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{url}					% clickable links
+\usepackage{marvosym}				% symbols
+\usepackage{wrapfig}				% wrapping text around figures
+\usepackage{fontspec}			% font encoding
+\usepackage{xunicode}
+\usepackage{phonenumbers}
+\usepackage[hidelinks]{hyperref}
+\usepackage{ragged2e}
+\usepackage{titlesec}
+\usepackage{framed}
+%\usepackage[default]{raleway}
+\usepackage{tocvsec2}
+% Customize (header and) footer
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+\usepackage{fontawesome}
+\usepackage{lipsum}
+\usepackage{babel}
+%\pagestyle{fancy}
+\pagestyle{empty}
+\setmainfont{Carlito}
+
+%\titlespacing\section{0pt}{0pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+%\titlespacing\NewsItem{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+%\titlespacing\subNewsItem{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+
+%\newfontfamily\headingfont[]{Arial}
+%\titleformat*{\section}{\Large\bfseries\sffamily}
+%\titleformat*{\section}{\Large\headingfont}
+
+%\renewcommand{\headrulewidth}{0.0pt}	% no bar on top of page
+%\renewcommand{\footrulewidth}{0.4pt}	% bar on bottom of page
+
+%%% ---------------
+%%% DEFINITIONS
+%%% ---------------
+
+% Define separators
+
+% Define Title en News input
+\newcommand{\JournalName}[1]{%
+		\begin{center}
+			%\Huge \usefont{T1}{augie}{m}{n}
+            \Large \usefont{T1}{augie}{m}{n}
+			#1%
+		\end{center}
+		\par \normalsize \normalfont}
+
+\newcommand{\NewsItem}[1]{%
+\vspace{3pt}
+\underline{\textbf{#1}}
+	%	%\usefont{T1}{augie}{m}{n}
+	%	\large \textbf{#1} %\vspace{3pt}
+   %     %\Large #1 \vspace{4pt}
+	%	%\par
+   %     \normalsize \normalfont
+		  }
+
+
+\graphicspath{{../images/}}
+
+%pas de numérotation des sections
+\setsecnumdepth{none}
+\setlength{\parindent}{0pt}
+%%% ---------------
+%%% BEGIN DOCUMENT
+%%% ---------------
+\begin{document}
+\begin{center}
+\JournalName{Communauté de Paroisses de Lingolsheim \\
+%\normalsize \textit{Notre Dame des Sables} \\
+%\\ \large \'{E}glise Saint Jean-Baptiste
+  \normalsize \textit{
+FÊTE DIEU -
+PROCESSION AVEC LE SAINT SACREMENT
+}
+}
+\end{center}
+
+Exposition du Saint Sacrement\\
+Chant d'adoration\\
+Encensement - Début de la procession
+
+\NewsItem{PREMIER REPOSOIR - RUE DES DAMES}
+
+\NewsItem{Évangile : Jn 6, 35- 40}
+
+\NewsItem{Intention}
+
+Seigneur, tu nous dévoiles aujourd’hui ton identité et ton origine, afin que notre union en ta personne nous donne la vie ; Ta présence dans l’Eucharistie résume tout le mystère de l’incarnation.
+
+En cette année où nous célébrons le jubilé de l’espérance, nous te prions Seigneur : que par nos célébrations eucharistiques, notre foi et notre espérance s’affermissent, afin de devenir de véritables témoins de ton Evangile.
+
+Toi qui vis et règnes avec le Père, dans l’unité du Saint-Esprit, maintenant et pour les siècles des siècles. Amen !
+
+\NewsItem{Notre Père}
+
+\NewsItem{Invocation}
+
+\begin{tabular}{rcp{10cm}}
+Prêtre & : &		« Cœur de Jésus, source de vie et de sainteté » \\
+Assemblée & : &	« Ayez pitié de nous » \\
+Prêtre & : &		« Cœur de Jésus, qui a expié nos péchés » \\
+Assemblée & : &	« Ayez pitié de nous » \\
+Prêtre & : &		« Cœur de Jésus, dont la plénitude s’est répandue sur nous » \\
+Assemblée & : &	« Ayez pitié de nous » \\
+Prêtre & : &		« Gloire au Père, et au Fils, et au Saint Esprit » \\
+Assemblée & : &	« Comme il était au commencement, maintenant et toujours, dans les siècles et des siècles » Amen  \\
+\end{tabular}
+\emph{Encensement - Bénédiction - Procession - Chants}
+
+
+\NewsItem{DEUXIÈME REPOSOIR - RUE DU CHÂTEAU}
+
+\NewsItem{Évangile : Mt 26, 26-29}
+
+\NewsItem{Intention}
+
+Jésus, nous te bénissons et nous te louons pour le moment où tu as pris le pain et le vin devant tes Apôtres, en prononçant avec amour ces paroles : « Prenez et mangez, prenez et buvez ! Faites cela en mémoire de moi ».
+
+Nous te rendons grâce aujourd’hui pour tous ceux qui participent à cette tâche divine : le Pape, les Evêques, les prêtres et tous ceux qui se préparent à prolonger ton œuvre eucharistique. Comble-les de ton Esprit Saint et rend leurs cœurs semblables au Tien.
+
+Toi qui vis et règnes avec le Père, dans l’unité du Saint-Esprit, maintenant et pour les siècles des siècles. Amen !
+
+\NewsItem{Notre Père}
+
+\NewsItem{Invocation}
+
+\begin{tabular}{rcp{10cm}}
+Prêtre & : &		« Cœur de Jésus, d’une infinie majesté » \\
+Assemblée & : &	« Ayez pitié de nous » \\
+Prêtre & : &		« Cœur de Jésus, temple Saint de Dieu » \\
+Assemblée & : &	« Ayez pitié de nous » \\
+Prêtre & : &		« Cœur de Jésus, maison de Dieu et porte du ciel » \\
+Assemblée & : &	« Ayez pitié de nous » \\
+Prêtre & : &		« Gloire au Père, et au Fils, et au Saint Esprit » \\
+Assemblée & : &	« Comme il était au commencement, maintenant et toujours, dans les siècles et des siècles » Amen  \\
+\end{tabular}
+\emph{Encensement - Bénédiction - Procession - Chants}
+
+\NewsItem{TROISIÈME REPOSOIR - PLACE DE LA LIBERTÉ}
+
+\NewsItem{Évangile : Marc 8, 1-9}
+
+\NewsItem{Intention}
+
+Jésus Eucharistie, jadis les foules accouraient jusqu’à toi et tu leur donnais à manger miraculeusement ; mais au delà de ces miracles, tu voulais leur faire comprendre qu’il ne fallait pas travailler uniquement pour cette nourriture terrestre, mais plutôt les amener à poser un acte de foi : Se nourrir de ton enseignement et s’abreuver de ta parole.
+
+Accorde-nous, Seigneur, de rechercher toujours cette nourriture céleste, afin de demeurer dans ton Amour.
+
+Toi qui vis et règnes avec le Père, dans l’unité du Saint-Esprit, maintenant et pour les siècles des siècles. Amen !
+
+\NewsItem{Notre Père}
+
+\NewsItem{Invocation}
+
+\begin{tabular}{rcp{10cm}}
+Prêtre & : &		« Cœur de Jésus, plein d'amour et de bonté » \\
+Assemblée & : &	« Ayez pitié de nous » \\
+Prêtre & : &		« Cœur de Jésus, abime de toutes les vertus » \\
+Assemblée & : &	« Ayez pitié de nous » \\
+Prêtre & : &		« Cœur de Jésus, Roi et centre de tous les cœurs  » \\
+Assemblée & : &	« Ayez pitié de nous » \\
+Prêtre & : &		« Gloire au Père, et au Fils, et au Saint Esprit » \\
+Assemblée & : &	« Comme il était au commencement, maintenant et toujours, dans les siècles et des siècles » Amen  \\
+\end{tabular}
+
+\emph{Encensement - Bénédiction - Procession - Chants}
+
+
+\end{document}
