@@ -1,0 +1,93 @@
+%%% ---------------
+%%% PREAMBLE
+%%% ---------------
+\documentclass[french,11pt,a4paper]{article}
+
+% Define geometry (without using the geometry package)
+\usepackage{geometry}
+\geometry{landscape, twocolumn, textwidth=27.5cm, textheight=19.5cm, columnsep=20mm}
+
+%\frenchspacing						% better looking spacing
+
+% Call packages we'll need
+\usepackage{graphicx}				% images
+\usepackage{amssymb,amsmath}		% math
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{url}					% clickable links
+\usepackage{marvosym}				% symbols
+\usepackage{wrapfig}				% wrapping text around figures
+\usepackage{fontspec}			% font encoding
+\usepackage{xunicode}
+\usepackage{phonenumbers}
+\usepackage[hidelinks]{hyperref}
+\usepackage{ragged2e}
+\usepackage{titlesec}
+\usepackage{framed}
+%\usepackage[default]{raleway}
+\usepackage{tocvsec2}
+% Customize (header and) footer
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+\usepackage{fontawesome}
+\usepackage{lipsum}
+\usepackage{babel}
+%\pagestyle{fancy}
+\pagestyle{empty}
+\setmainfont{Carlito}
+
+%\titlespacing\section{0pt}{0pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+%\titlespacing\NewsItem{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+%\titlespacing\subNewsItem{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+
+%\newfontfamily\headingfont[]{Arial}
+%\titleformat*{\section}{\Large\bfseries\sffamily}
+%\titleformat*{\section}{\Large\headingfont}
+
+%\renewcommand{\headrulewidth}{0.0pt}	% no bar on top of page
+%\renewcommand{\footrulewidth}{0.4pt}	% bar on bottom of page
+
+%%% ---------------
+%%% DEFINITIONS
+%%% ---------------
+
+% Define separators
+
+% Define Title en News input
+\newcommand{\JournalName}[1]{%
+		\begin{center}
+			%\Huge \usefont{T1}{augie}{m}{n}
+            \Large \usefont{T1}{augie}{m}{n}
+			#1%
+		\end{center}
+		\par \normalsize \normalfont}
+
+\newcommand{\NewsItem}[1]{%
+\vspace{3pt}
+\underline{\textbf{#1}}
+	%	%\usefont{T1}{augie}{m}{n}
+	%	\large \textbf{#1} %\vspace{3pt}
+   %     %\Large #1 \vspace{4pt}
+	%	%\par
+   %     \normalsize \normalfont
+		  }
+
+
+\graphicspath{{../images/}}
+
+%pas de numérotation des sections
+\setsecnumdepth{none}
+\setlength{\parindent}{0pt}
+%%% ---------------
+%%% BEGIN DOCUMENT
+%%% ---------------
+\begin{document}
+\input{page1}
+\newpage
+\input{page1}
+\newpage
+\input{page2}
+\newpage
+\input{page2}
+
+\end{document}
