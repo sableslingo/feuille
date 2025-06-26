@@ -1,0 +1,242 @@
+%%% ---------------
+%%% PREAMBLE
+%%% ---------------
+\documentclass[french,11pt]{article}
+
+% Define geometry (without using the geometry package)
+\usepackage[a4paper]{geometry}
+\geometry{landscape, twocolumn, textwidth=27.5cm, textheight=19.5cm, columnsep=20mm}
+
+%\frenchspacing						% better looking spacing
+
+% Call packages we'll need
+\usepackage{graphicx}				% images
+\usepackage{amssymb,amsmath}		% math
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{url}					% clickable links
+\usepackage{marvosym}				% symbols
+\usepackage{wrapfig}				% wrapping text around figures
+\usepackage{fontspec}			% font encoding
+\usepackage{xunicode}
+\usepackage{phonenumbers}
+\usepackage[hidelinks]{hyperref}
+\usepackage{ragged2e}
+\usepackage{titlesec}
+\usepackage{framed}
+%\usepackage[default]{raleway}
+\usepackage{tocvsec2}
+% Customize (header and) footer
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+\usepackage{eurosym}
+\usepackage{fontawesome}
+\usepackage{lipsum}
+\usepackage{babel}
+%\pagestyle{fancy}
+\pagestyle{empty}
+\setmainfont{Carlito}
+
+%\titlespacing\section{0pt}{0pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+%\titlespacing\subsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+%\titlespacing\subsubsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+
+%\newfontfamily\headingfont[]{Arial}
+%\titleformat*{\section}{\Large\bfseries\sffamily}
+%\titleformat*{\section}{\Large\headingfont}
+
+%\renewcommand{\headrulewidth}{0.0pt}	% no bar on top of page
+%\renewcommand{\footrulewidth}{0.4pt}	% bar on bottom of page
+
+%%% ---------------
+%%% DEFINITIONS
+%%% ---------------
+
+% Define separators
+
+% Define Title en News input
+\newcommand{\JournalName}[1]{%
+		\begin{center}
+			%\Huge \usefont{T1}{augie}{m}{n}
+            \Large \usefont{T1}{augie}{m}{n}
+			#1%
+		\end{center}
+		\par \normalsize \normalfont}
+
+\newcommand*{\chants}{../chants}
+\newcommand*{\messe}{../messe_bienveillance}
+\newcommand*{\pu}{../pu}
+\newcommand*{\psaumes}{../psaumes}
+\newcommand*{\footer}{..}
+
+\newcommand{\NewsItem}[1]{%
+\vspace{3pt}
+\underline{\textbf{#1}}
+	%	%\usefont{T1}{augie}{m}{n}
+	%	\large \textbf{#1} %\vspace{3pt}
+   %     %\Large #1 \vspace{4pt}
+	%	%\par
+   %     \normalsize \normalfont
+		  }
+
+\newcommand{\NewsAuthor}[1]{%
+			\hfill by \textsc{#1} \vspace{4pt}
+			\par \normalfont}
+
+\graphicspath{{../images/}}
+
+%pas de numérotation des sections
+\setsecnumdepth{none}
+\setlength{\parindent}{0pt}
+%%% ---------------
+%%% BEGIN DOCUMENT
+%%% ---------------
+\begin{document}
+
+\NewsItem{CHANT D'ENTRÉE}
+	\input{\chants/je_veux_te_louer}
+
+\NewsItem{PRÉPARATION PÉNITENTIELLE} \\
+	\input{\messe/kyrie}
+
+\NewsItem{GLORIA}
+	\input{\messe/gloria}
+
+
+% -----
+\NewsItem{1\iere{} LECTURE} Ac 12, 1-11
+% -----
+
+\NewsItem{PSAUME}
+\input{\psaumes/psaume_33}
+
+% -----
+\NewsItem{2\ieme{} LECTURE}  2 Tm 4, 6-8.17-18
+
+\NewsItem{ACCLAMATION}
+\input{\messe/alleluia}
+
+\NewsItem{ÉVANGILE} Mt 16, 13-19
+
+\NewsItem{HOMÉLIE}
+
+\NewsItem{PROFESSION DE FOI}
+%\input{\chants/je_crois_en_toi}
+
+%\newpage
+
+\NewsItem{PRIÈRES UNIVERSELLES}
+\input{\pu/dans_ta_bonte}
+
+\NewsItem{OFFERTOIRE}
+
+\NewsItem{PRIÈRES SUR LES OFFRANDES}
+\textit{Nous nous levons et nous répondons : }
+Que le Seigneur reçoive de vos mains ce sacrifice à la louange et à la gloire
+de Son nom, pour notre bien et celui de toute l’Église.
+
+\NewsItem{SANCTUS}
+\input{\messe/sanctus}
+
+\NewsItem{ANAMNÈSE}
+\input{\messe/anamnese}
+
+\NewsItem{NOTRE PÈRE}
+
+\NewsItem{AGNUS} \\
+\input{\messe/agnus}
+
+\NewsItem{COMMUNION}
+\input{\chants/tu_fais_ta_demeure}
+
+\NewsItem{ANNONCES PAROISSIALES}
+
+
+\NewsItem{CHANT D'ENVOI}
+\input{\chants/allez_dire_a_tous_les_hommes}
+
+\newpage
+
+
+%\NewsItem{Intentions de messe}
+%\begin{itemize}
+%\item[\Cross]
+%Monsieur Roger Nicolas KLEIN
+%\item[\Cross] Madame Joaquina ALVÉS
+%\end{itemize}
+
+\NewsItem{Informations paroissiales}
+
+\begin{tabular} {lcp{9cm}}
+\multicolumn{3}{c}{\textbf{Saint Jean-Baptiste} } \\ \hline
+Mardi    & 01 juillet  & Vêpres 18h15. Messe 18h30 \\ \hline
+Jeudi    & 03 juillet  &
+Exposition du Saint Sacrement à 16h00. Adoration. Salut au Saint Sacrement à 18h15. Messe à 18h30 
+ \\ \hline
+Vendredi & 04 juillet  & Laudes 08h45. Messe 09h00 \\ \hline
+Samedi   & 05 juillet  & Messe anticipée 18h00 \\ \hline
+Dimanche & 06 juillet  & Pas de messe \\ \hline
+\multicolumn{3}{c}{\textbf{Sainte Croix} } \\ \hline
+Mercredi & 02 juillet  & Messe 09h00.
+%\newline \Cross{} \textbf{Enterrement}  14h30 Marie-Claire Noël
+\\ \hline
+Dimanche  & 06 juillet  & Messe 10h00\\ \hline
+\multicolumn{3}{c}{\textbf{Résidence Landsberg (3 rue Jean Monnet)} } \\ \hline
+Mercredi & 02 juillet : & Messe 10h45 \\ \hline
+\end{tabular}
+
+\begin{framed}
+\begin{tabular} {lcp{8cm}}
+%\multicolumn{3}{c}{\textbf{Saint Jean-Baptiste} } \\
+%\multicolumn{3}{l}{ Du 06 juil. au 14 sept. : pas de messe le dimanche } \\
+%Samedi & 28 juin  & 19h15. Foyer St Joseph. \textbf{Soirée tartes flambées} pour fêter la fin de l'année liturgique.
+%Réservation Claire DERRENDINGER \phonenumber[country=FR]{0621465131} \href{mailto:c.derrendinger@gmail.com}{c.derrendinger@gmail.com} \\
+\multicolumn{3}{c}{\textbf{Sainte Croix} } \\
+\multicolumn{3}{l}{ Du 06 juil. au 14 sept. : \textbf{messe unique} le dimanche à Sainte Croix à 10h00.} \\
+%\multicolumn{3}{c}{\textbf{Foyer Oberlin} } \\
+%\multicolumn{3}{c}{\textbf{Résidence Landsberg (3 rue Jean Monnet)} } \\
+%Mercredi & 09 juillet & Messe 10h45 \\ \hline
+\end{tabular}
+\end{framed}
+
+\begin{framed}
+Les quêtes des deux églises pour les deux week-ends du 22-23/03/2025 et 29-30/03/2025, plus les offrandes pour les Rameaux 2024-2025 on rapporté
+la somme de \textbf{2314.80 \euro}. Cette somme a été partagée pour soutenir financièrement les quatre jeunes qui partirons à Lourdes et les trois jeunes qui partiront à Rome,
+pélerinages qui se déroulent en juillet 2025. Grand merci pour votre générosité.
+\end{framed}
+
+\emph{Notre curé recherche des personnes pour le soutenir au \textbf{secrétariat}. Venez participer à la vie de la paroisse !}
+
+\NewsItem{Répétitions des chorales}
+\begin{description}
+\item[Chorales paroissiales] : reprise le vendredi 05 septembre (20h15 à Ste Croix)
+%\item[Chorales paroissiales] : vendredi 20h15 à Sainte Croix
+\end{description}
+
+\input{\footer/footer}
+
+\newpage
+
+\JournalName{Communauté de Paroisses de Lingolsheim \\
+\normalsize \textit{Notre Dame des Sables}
+%\\ \large \'{E}glise Saint Jean-Baptiste
+\\  \normalsize \textit{Saints Pierre et Paul, Apôtres}
+\\ \large Samedi 28 juin  2025}
+%\noindent\HorRule{3pt} \\[-0.75\baselineskip]
+%\HorRule{1pt}
+% -----
+
+% Front article
+% -----
+%\vspace{0.5cm}
+%	\SepRule
+%\vspace{0.5cm}
+
+%\begin{center}
+\begin{minipage}[h]{1.0\linewidth}
+\setlength{\parindent}{1em}
+\input{edito}
+\end{minipage}
+%\end{center}
+% -----
+\end{document}
