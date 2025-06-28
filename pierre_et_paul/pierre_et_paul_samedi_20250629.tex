@@ -29,10 +29,10 @@
 % Customize (header and) footer
 \usepackage{fancyhdr}
 \usepackage{enumitem}
-\usepackage{eurosym}
 \usepackage{fontawesome}
 \usepackage{lipsum}
 \usepackage{babel}
+\usepackage{currency}
 %\pagestyle{fancy}
 \pagestyle{empty}
 \setmainfont{Carlito}
@@ -69,6 +69,8 @@
 \newcommand*{\psaumes}{../psaumes}
 \newcommand*{\footer}{..}
 
+\DefineCurrency{EUR}{name={euro}, plural={euros}, symbol={\euro}, iso={EUR}, kind=iso}
+
 \newcommand{\NewsItem}[1]{%
 \vspace{3pt}
 \underline{\textbf{#1}}
@@ -82,6 +84,8 @@
 \newcommand{\NewsAuthor}[1]{%
 			\hfill by \textsc{#1} \vspace{4pt}
 			\par \normalfont}
+\sisetup{locale=FR}
+\sisetup{group-minimum-digits=3}
 
 \graphicspath{{../images/}}
 
@@ -201,7 +205,7 @@ Mercredi & 02 juillet : & Messe 10h45 \\ \hline
 
 \begin{framed}
 Les quêtes des deux églises pour les deux week-ends du 22-23/03/2025 et 29-30/03/2025, plus les offrandes pour les Rameaux 2024-2025 on rapporté
-la somme de \textbf{2314.80 \euro}. Cette somme a été partagée pour soutenir financièrement les quatre jeunes qui partirons à Lourdes et les trois jeunes qui partiront à Rome,
+la somme de \dEUR[kind=symbol]{2314.80}. Cette somme a été partagée pour soutenir financièrement les quatre jeunes qui partirons à Lourdes et les trois jeunes qui partiront à Rome,
 pélerinages qui se déroulent en juillet 2025. Grand merci pour votre générosité.
 \end{framed}
 
