@@ -1,0 +1,238 @@
+%%% ---------------
+%%% PREAMBLE
+%%% ---------------
+\documentclass[french,11pt]{article}
+
+% Define geometry (without using the geometry package)
+\usepackage[a4paper]{geometry}
+\geometry{landscape, twocolumn, textwidth=27.5cm, textheight=19.5cm, columnsep=20mm}
+
+%\frenchspacing						% better looking spacing
+
+% Call packages we'll need
+\usepackage{graphicx}				% images
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{url}					% clickable links
+\usepackage{marvosym}				% symbols
+\usepackage{wrapfig}				% wrapping text around figures
+\usepackage{fontspec}			% font encoding
+\usepackage{xunicode}
+\usepackage{phonenumbers}
+\usepackage[hidelinks]{hyperref}
+\usepackage{ragged2e}
+\usepackage{titlesec}
+\usepackage{framed}
+%\usepackage[default]{raleway}
+\usepackage{tocvsec2}
+% Customize (header and) footer
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+\usepackage{fontawesome}
+\usepackage{lipsum}
+\usepackage{babel}
+%\usepackage{currency}
+%\pagestyle{fancy}
+\pagestyle{empty}
+\setmainfont{Carlito}
+
+%\newfontfamily\headingfont[]{Arial}
+%\titleformat*{\section}{\Large\bfseries\sffamily}
+%\titleformat*{\section}{\Large\headingfont}
+
+%\renewcommand{\headrulewidth}{0.0pt}	% no bar on top of page
+%\renewcommand{\footrulewidth}{0.4pt}	% bar on bottom of page
+
+%%% ---------------
+%%% DEFINITIONS
+%%% ---------------
+
+% Define separators
+
+% Define Title en News input
+\newcommand{\JournalName}[1]{%
+		\begin{center}
+			%\Huge \usefont{T1}{augie}{m}{n}
+            \Large \usefont{T1}{augie}{m}{n}
+			#1%
+		\end{center}
+		\par \normalsize \normalfont}
+
+\newcommand*{\chants}{../chants}
+\newcommand*{\messe}{../messe_david_julien}
+\newcommand*{\pu}{../pu}
+\newcommand*{\psaumes}{../psaumes}
+\newcommand*{\footer}{..}
+
+%\DefineCurrency{EUR}{name={euro}, plural={euros}, symbol={\euro}, iso={EUR}, kind=iso}
+
+\newcommand{\NewsItem}[1]{%
+\vspace{3pt}
+\underline{\textbf{#1}}
+	%	%\usefont{T1}{augie}{m}{n}
+	%	\large \textbf{#1} %\vspace{3pt}
+   %     %\Large #1 \vspace{4pt}
+	%	%\par
+   %     \normalsize \normalfont
+		  }
+
+\newcommand{\NewsAuthor}[1]{%
+			\hfill by \textsc{#1} \vspace{4pt}
+			\par \normalfont}
+%\sisetup{locale=FR}
+%\sisetup{group-minimum-digits=3}
+
+\graphicspath{{../images/}}
+
+%pas de numérotation des sections
+\setsecnumdepth{none}
+\setlength{\parindent}{0pt}
+%%% ---------------
+%%% BEGIN DOCUMENT
+%%% ---------------
+\begin{document}
+
+\NewsItem{CHANT D'ENTRÉE}\\
+	\input{\chants/chantez_priez}
+
+\NewsItem{PRÉPARATION PÉNITENTIELLE}\\
+	\input{\messe/kyrie}
+
+\NewsItem{GLORIA}\\
+	\input{\messe/gloria}
+
+
+% -----
+\NewsItem{1\iere{} LECTURE} Si 3, 17-18.20.28-29
+% -----
+
+\NewsItem{PSAUME}
+\input{\psaumes/psaume_67}
+
+% -----
+\NewsItem{2\ieme{} LECTURE} He 12, 18-19.22-24a
+
+\NewsItem{ACCLAMATION}
+\input{\messe/alleluia}
+
+\NewsItem{ÉVANGILE} Lc 14, 1.7-14
+
+\NewsItem{HOMÉLIE}
+
+\NewsItem{PROFESSION DE FOI}
+%\input{\chants/je_crois_en_toi}
+
+%\newpage
+
+\NewsItem{PRIÈRES UNIVERSELLES}
+\input{\pu/seigneur_ecoute}
+
+\NewsItem{OFFERTOIRE}
+
+\NewsItem{PRIÈRES SUR LES OFFRANDES}
+\textit{Nous nous levons et nous répondons : }
+Que le Seigneur reçoive de vos mains ce sacrifice à la louange et à la gloire
+de Son nom, pour notre bien et celui de toute l’Église.
+
+\NewsItem{SANCTUS}
+\input{\messe/sanctus}
+
+\NewsItem{ANAMNÈSE}
+\input{\messe/anamnese}
+
+\NewsItem{NOTRE PÈRE}
+
+\NewsItem{AGNUS} \\
+\input{\messe/agnus}
+
+\NewsItem{COMMUNION}\\
+\input{\chants/c_est_toi_seigneur}
+
+\NewsItem{ANNONCES PAROISSIALES}
+
+
+\NewsItem{CHANT D'ENVOI}\\
+\input{\chants/peuple_de_l_alliance}
+
+\newpage
+
+%\NewsItem{Intentions de messe}
+%\begin{itemize}
+%%\item[\Cross] Célestin NDIOGOYE
+%\end{itemize}
+
+\NewsItem{Informations paroissiales}
+
+\begin{tabular} {lcp{9cm}}
+\multicolumn{3}{c}{\textbf{Saint Jean-Baptiste} } \\ \hline
+%Mardi    & 01 juillet  & Vêpres 18h15. Messe 18h30 \\ \hline
+Jeudi    & 04 sept. &
+Exposition du Saint Sacrement à 16h00. Adoration. Salut au Saint Sacrement à 18h15. Messe à 18h30 
+ \\ \hline
+Vendredi & 05 sept. & Laudes 08h45. Messe 09h00 \\ \hline
+Samedi   & 06 sept & Messe anticipée 18h00 \\ \hline
+%Dimanche & & Pas de messe \\ \hline
+\multicolumn{3}{c}{\textbf{Sainte Croix} } \\ \hline
+%Mercredi & 02 juillet  & Messe 09h00.
+%\newline \Cross{} \textbf{Enterrement}  14h30 Marie-Claire Noël \\ \hline
+Dimanche  & 07 sept. & Messe 10h00\\ \hline
+%\multicolumn{3}{c}{\textbf{Résidence Landsberg (3 rue Jean Monnet)} } \\ \hline
+%Mercredi & 02 juillet : & Messe 10h45 \\ \hline
+\end{tabular}
+
+\begin{framed}
+\begin{tabular} {lcp{7cm}}
+\multicolumn{3}{c}{\textbf{Saint Jean-Baptiste} } \\
+\multicolumn{3}{l}{ Du 06 juil. au 14 sept. : pas de messe le dimanche } \\
+%Vendredi & 01 août & 08h45 Laudes. Pas de messe. \\
+\multicolumn{3}{c}{\textbf{Sainte Croix} } \\
+\multicolumn{3}{l}{ Du 06 juil. au 14 sept. : \textbf{messe unique} le dimanche à Sainte Croix à 10h00.} \\
+Dimanche & 14 sept. & Messe de rentrée 10h00 \\
+Dimanche & 14 sept. &  Barbecue 12h00 - 15~euros. \newline
+ Inscription avant le 07 sept. auprès de Bernard Braun \texttt{bernardbrstr@gmail.com} ou \texttt{06~83~82~52~50}\\
+%\multicolumn{3}{c}{\textbf{Foyer Oberlin} } \\
+%\multicolumn{3}{c}{\textbf{Résidence Landsberg (3 rue Jean Monnet)} } \\
+%Mercredi & 09 juillet & Messe 10h45 \\ \hline
+\end{tabular}
+\end{framed}
+
+\begin{framed}
+Chers parents,\\
+\textbf{les inscriptions des enfants à la catéchèse} se feront en présence du Père Daniel au presbytère
+les vendredis 12, 19, 26 septembre de 16h30 à 18h30. Merci de venir accompagné de votre enfant.
+Plus d'informations sur internet.
+\end{framed}
+
+\NewsItem{Répétitions des chorales}
+\begin{description}
+\item[Chorales paroissiales] : reprise le vendredi 05 septembre (20h15 à Ste Croix)
+%\item[Chorales paroissiales] : vendredi 20h15 à Sainte Croix
+\end{description}
+
+\input{\footer/footer}
+
+\newpage
+
+\JournalName{Communauté de Paroisses de Lingolsheim \\
+\normalsize \textit{Notre Dame des Sables}
+%\\ \large \'{E}glise Saint Jean-Baptiste
+\\  \normalsize \textit{22\ieme{} dimanche du Temps Ordinaire - C}
+\\ \large Dimanche 31 août 2025}
+%\noindent\HorRule{3pt} \\[-0.75\baselineskip]
+%\HorRule{1pt}
+% -----
+
+% Front article
+% -----
+%\vspace{0.5cm}
+%	\SepRule
+%\vspace{0.5cm}
+
+%\begin{center}
+\begin{minipage}[h]{1.0\linewidth}
+\setlength{\parindent}{1em}
+\input{edito}
+\end{minipage}
+%\end{center}
+% -----
+\end{document}
