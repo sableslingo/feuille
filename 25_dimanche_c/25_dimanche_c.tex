@@ -5,7 +5,7 @@
 
 % Define geometry (without using the geometry package)
 \usepackage[a4paper]{geometry}
-\geometry{landscape, twocolumn, textwidth=27.5cm, textheight=19.5cm, columnsep=20mm}
+\geometry{landscape, twocolumn, textwidth=28.0cm, textheight=19.5cm, columnsep=17mm}
 
 %\frenchspacing						% better looking spacing
 
@@ -59,7 +59,7 @@
 		\par \normalsize \normalfont}
 
 \newcommand*{\chants}{../chants}
-\newcommand*{\messe}{../messe_900}
+\newcommand*{\messe}{../messe_du_peuple_de_dieu}
 \newcommand*{\pu}{../pu}
 \newcommand*{\psaumes}{../psaumes}
 \newcommand*{\footer}{..}
@@ -92,8 +92,8 @@
 %%% ---------------
 \begin{document}
 
-\NewsItem{CHANT D'ENTRÉE}
-	\input{\chants/jubilez_criez_de_joie}
+\NewsItem{CHANT D'ENTRÉE}\\
+	\input{\chants/beni_sois_tu_seigneur}
 
 \NewsItem{PRÉPARATION PÉNITENTIELLE}\\
 	\input{\messe/kyrie}
@@ -103,19 +103,19 @@
 
 
 % -----
-\NewsItem{1\iere{} LECTURE} Sg 9, 13-18
+\NewsItem{1\iere{} LECTURE} Am 8, 4-7
 % -----
 
 \NewsItem{PSAUME}
-\input{\psaumes/psaume_89}
+\input{\psaumes/psaume_112}
 
 % -----
-\NewsItem{2\ieme{} LECTURE} Phm 9b-10.12-17
+\NewsItem{2\ieme{} LECTURE} 1 Tm 2, 1-8
 
 \NewsItem{ACCLAMATION}
 \input{\messe/alleluia}
 
-\NewsItem{ÉVANGILE} Lc 14, 25-33
+\NewsItem{ÉVANGILE} Lc 16, 1-13
 
 \NewsItem{HOMÉLIE}
 
@@ -125,7 +125,7 @@
 %\newpage
 
 \NewsItem{PRIÈRES UNIVERSELLES}
-\input{\pu/accueille_au_creux}
+\input{\pu/sur_la_terre_des_hommes}
 
 \NewsItem{OFFERTOIRE}
 
@@ -133,6 +133,8 @@
 \textit{Nous nous levons et nous répondons : }
 Que le Seigneur reçoive de vos mains ce sacrifice à la louange et à la gloire
 de Son nom, pour notre bien et celui de toute l’Église.
+
+\newpage
 
 \NewsItem{SANCTUS}
 \input{\messe/sanctus}
@@ -145,64 +147,56 @@ de Son nom, pour notre bien et celui de toute l’Église.
 \NewsItem{AGNUS} \\
 \input{\messe/agnus}
 
-\NewsItem{COMMUNION}
-\input{\chants/pain_veritable}
+\NewsItem{COMMUNION}\\
+\input{\chants/mendiant_du_jour}
 
 \NewsItem{ANNONCES PAROISSIALES}
 
 
-\NewsItem{CHANT D'ENVOI}\\
-\input{\chants/peuple_de_dieu_marche}
+\NewsItem{CHANT D'ENVOI}
+\input{\chants/allez_dire_a_tous_les_hommes}
 
 \newpage
 
 \NewsItem{Intentions de messe}
 \begin{itemize}
-\item[\Cross] Roland et Liliane ALBUGUES
-\item[\Cross] Pierre DREXLER
+\item[\Cross] M. Émile KIRCHGESNER (dimanche 11h)
+\item[\Cross] M. Marc GROLL (samedi)
 \end{itemize}
 
 \NewsItem{Informations paroissiales}
 
 \begin{tabular} {lcp{9cm}}
 \multicolumn{3}{c}{\textbf{Saint Jean-Baptiste} } \\ \hline
-%Mardi    & 01 juillet  & Vêpres 18h15. Messe 18h30 \\ \hline
-Jeudi    & 11 sept. &
+Mardi    & 23 sept.  &\emph{S. Pio de Pietrelcina, prêtre}\newline  Vêpres 18h15. Messe 18h30 \\ \hline
+Jeudi    & 25 sept. &
 Exposition du Saint Sacrement à 16h00. Adoration. Salut au Saint Sacrement à 18h15. Messe à 18h30 
  \\ \hline
-Vendredi & 12 sept. & Laudes 08h45. Messe 09h00 \\ \hline
-Samedi   & 13 sept & Messe anticipée 18h00 \\ \hline
-%Dimanche & & Pas de messe \\ \hline
+Vendredi & 26 sept. & Laudes 08h45. Messe 09h00 \\ \hline
+Samedi   & 27 sept & Messe anticipée 18h00 \\ \hline
+Dimanche  & 28 sept. & Messe 11h00\\ \hline
 \multicolumn{3}{c}{\textbf{Sainte Croix} } \\ \hline
-%Mercredi & 02 juillet  & Messe 09h00.
+Mercredi & 24 sept.  & Messe 09h00. \\ \hline
 %\newline \Cross{} \textbf{Enterrement}  14h30 Marie-Claire Noël \\ \hline
-Dimanche  & 14 sept. & \emph{La Croix Glorieuse}\newline Messe de rentrée 10h00 \emph{avec bénédiction des cartables}\\ \hline
+Dimanche  & 28 sept. & Messe 09h30\\ \hline
 %\multicolumn{3}{c}{\textbf{Résidence Landsberg (3 rue Jean Monnet)} } \\ \hline
 %Mercredi & 02 juillet : & Messe 10h45 \\ \hline
 \end{tabular}
 
 \begin{framed}
-\begin{tabular} {lcp{7cm}}
-\multicolumn{3}{c}{\textbf{Saint Jean-Baptiste} } \\
-%%\multicolumn{3}{l}{ Du 06 juil. au 14 sept. : pas de messe le dimanche } \\
-Samedi & 20 sept. &  Messe anticipée 18h00 \\
-Dimanche & 21 sept. &  Messe 11h00 \\
-\multicolumn{3}{c}{\textbf{Sainte Croix} } \\
-%%\multicolumn{3}{l}{ Du 06 juil. au 14 sept. : \textbf{messe unique} le dimanche à Sainte Croix à 10h00.} \\
-Dimanche & 21 sept. &  Messe 09h30 \\
-%%Dimanche & 14 sept. &  Barbecue 12h00 - 15~euros. \newline
-%% Inscription avant le 07 sept. auprès de Bernard Braun \texttt{bernardbrstr@gmail.com} ou \texttt{06~83~82~52~50}\\
-%%\multicolumn{3}{c}{\textbf{Foyer Oberlin} } \\
-%%\multicolumn{3}{c}{\textbf{Résidence Landsberg (3 rue Jean Monnet)} } \\
-%%Mercredi & 09 juillet & Messe 10h45 \\ \hline
-\end{tabular}
-\end{framed}
-
-\begin{framed}
-Chers parents,\\
+\begin{itemize}
+\item
+Les \textbf{mini-rentrées} (présentation des équipes) vont avoir lieu les dimanches 28 septembre et 05 octobre.
+\item
+Chers parents,
 \textbf{les inscriptions des enfants à la catéchèse} se feront en présence du Père Daniel au presbytère
-les vendredis 12, 19, 26 septembre de 16h30 à 18h30. Merci de venir accompagné de votre enfant.
+le vendredi 26 septembre de 16h30 à 18h30. Merci de venir accompagné de votre enfant.
 Plus d'informations sur internet.
+\item
+\textbf{Les familles endeuillées} sont invitées à une après-midi conviviale mardi le 30 septembre 2025 à 14h30
+au presbytère St Jean-Baptiste pour un temps de partage autour d'un texte de l’Évangile et de la période difficile du deuil.
+Personne contact : Brigitte FLORIAN 06.73.45.66.78
+\end{itemize}
 \end{framed}
 
 \NewsItem{Répétitions des chorales}
@@ -217,8 +211,8 @@ Plus d'informations sur internet.
 \JournalName{Communauté de Paroisses de Lingolsheim \\
 \normalsize \textit{Notre Dame des Sables}
 %\\ \large \'{E}glise Saint Jean-Baptiste
-\\  \normalsize \textit{23\ieme{} dimanche du Temps Ordinaire - C}
-\\ \large Samedi 06 septembre 2025}
+\\  \normalsize \textit{25\ieme{} dimanche du Temps Ordinaire - C}
+\\ \large Dimanche 21 septembre 2025}
 %\noindent\HorRule{3pt} \\[-0.75\baselineskip]
 %\HorRule{1pt}
 % -----
