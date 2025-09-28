@@ -1,0 +1,224 @@
+%%% ---------------
+%%% PREAMBLE
+%%% ---------------
+\documentclass[french,11pt]{article}
+
+% Define geometry (without using the geometry package)
+\usepackage[a4paper]{geometry}
+\geometry{landscape, twocolumn, textwidth=28.0cm, textheight=19.5cm, columnsep=17mm}
+
+%\frenchspacing						% better looking spacing
+
+% Call packages we'll need
+\usepackage{graphicx}				% images
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{url}					% clickable links
+\usepackage{marvosym}				% symbols
+\usepackage{wrapfig}				% wrapping text around figures
+\usepackage{fontspec}			% font encoding
+\usepackage{xunicode}
+\usepackage{phonenumbers}
+\usepackage[hidelinks]{hyperref}
+\usepackage{ragged2e}
+\usepackage{titlesec}
+\usepackage{framed}
+%\usepackage[default]{raleway}
+\usepackage{tocvsec2}
+% Customize (header and) footer
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+\usepackage{fontawesome}
+\usepackage{lipsum}
+\usepackage{babel}
+%\usepackage{currency}
+%\pagestyle{fancy}
+\pagestyle{empty}
+\setmainfont{Carlito}
+
+%\newfontfamily\headingfont[]{Arial}
+%\titleformat*{\section}{\Large\bfseries\sffamily}
+%\titleformat*{\section}{\Large\headingfont}
+
+%\renewcommand{\headrulewidth}{0.0pt}	% no bar on top of page
+%\renewcommand{\footrulewidth}{0.4pt}	% bar on bottom of page
+
+%%% ---------------
+%%% DEFINITIONS
+%%% ---------------
+
+% Define separators
+
+% Define Title en News input
+\newcommand{\JournalName}[1]{%
+		\begin{center}
+			%\Huge \usefont{T1}{augie}{m}{n}
+            \Large \usefont{T1}{augie}{m}{n}
+			#1%
+		\end{center}
+		\par \normalsize \normalfont}
+
+\newcommand*{\chants}{../chants}
+\newcommand*{\messe}{../messe_du_peuple_de_dieu}
+\newcommand*{\pu}{../pu}
+\newcommand*{\psaumes}{../psaumes}
+\newcommand*{\footer}{..}
+
+%\DefineCurrency{EUR}{name={euro}, plural={euros}, symbol={\euro}, iso={EUR}, kind=iso}
+
+\newcommand{\NewsItem}[1]{%
+\vspace{3pt}
+\underline{\textbf{#1}}
+	%	%\usefont{T1}{augie}{m}{n}
+	%	\large \textbf{#1} %\vspace{3pt}
+   %     %\Large #1 \vspace{4pt}
+	%	%\par
+   %     \normalsize \normalfont
+		  }
+
+\newcommand{\NewsAuthor}[1]{%
+			\hfill by \textsc{#1} \vspace{4pt}
+			\par \normalfont}
+%\sisetup{locale=FR}
+%\sisetup{group-minimum-digits=3}
+
+\graphicspath{{../images/}}
+
+%pas de numérotation des sections
+\setsecnumdepth{none}
+\setlength{\parindent}{0pt}
+%%% ---------------
+%%% BEGIN DOCUMENT
+%%% ---------------
+\begin{document}
+
+\NewsItem{CHANT D'ENTRÉE}
+	\input{\chants/dieu_nous_eveille_a_la_foi}
+
+\NewsItem{PRÉPARATION PÉNITENTIELLE}\\
+	\input{\messe/kyrie}
+
+\NewsItem{GLORIA}\\
+	\input{\messe/gloria}
+
+
+% -----
+\NewsItem{1\iere{} LECTURE} Ha 1, 2-3 ; 2, 2-4
+% -----
+
+\NewsItem{PSAUME}
+\input{\psaumes/psaume_94}
+
+% -----
+\NewsItem{2\ieme{} LECTURE} 2 Tm 1, 6-8.13-14
+
+\NewsItem{ACCLAMATION}
+\input{\messe/alleluia}
+
+\NewsItem{ÉVANGILE} Lc 17, 5-10
+
+\NewsItem{HOMÉLIE}
+
+\NewsItem{PROFESSION DE FOI}
+%\input{\chants/je_crois_en_toi}
+
+%\newpage
+
+\NewsItem{PRIÈRES UNIVERSELLES}
+\input{\pu/seigneur_ecoute}
+
+\NewsItem{OFFERTOIRE}
+
+\NewsItem{PRIÈRES SUR LES OFFRANDES}
+\textit{Nous nous levons et nous répondons : }
+Que le Seigneur reçoive de vos mains ce sacrifice à la louange et à la gloire
+de Son nom, pour notre bien et celui de toute l’Église.
+
+
+\NewsItem{SANCTUS}
+\input{\messe/sanctus}
+
+\NewsItem{ANAMNÈSE}
+\input{\messe/anamnese}
+
+\NewsItem{NOTRE PÈRE}
+
+\NewsItem{AGNUS} \\
+\input{\messe/agnus}
+
+\NewsItem{COMMUNION} \textbf{orgue} ou
+\input{\chants/comme_lui}
+
+\NewsItem{ANNONCES PAROISSIALES}
+
+
+\NewsItem{CHANT D'ENVOI}
+\input{\chants/marie_douce_lumiere}
+
+\newpage
+
+\NewsItem{Intentions de messe}
+\begin{itemize}
+\item[\Cross] Mme Marie Clothilde DUSCH (Sainte Croix)
+\item[\Cross] Mme Jacqueline HERON. (Sainte Croix)
+\end{itemize}
+
+\NewsItem{Informations paroissiales}
+
+\begin{tabular} {lcp{9cm}}
+\multicolumn{3}{c}{\textbf{Saint Jean-Baptiste} } \\ \hline
+Mardi    & 07 oct.  &\emph{Bienheureuse Vierge Marie du Rosaire}\newline  Vêpres 18h15. Messe 18h30 \\ \hline
+Jeudi    & 09 oct. &
+Exposition du Saint Sacrement à 16h00. Adoration. Salut au Saint Sacrement à 18h15. Messe à 18h30 
+ \\ \hline
+Vendredi & 10 oct. & Laudes 08h45. Messe 09h00 \\ \hline
+Samedi   & 11 oct. & Messe anticipée 18h00 \\ \hline
+Dimanche  & 12 oct. & Messe 11h00\\ \hline
+\multicolumn{3}{c}{\textbf{Sainte Croix} } \\ \hline
+Mercredi & 08 oct.  & Messe 09h00. \\ \hline
+%\newline \Cross{} \textbf{Enterrement}  14h30 Marie-Claire Noël \\ \hline
+Dimanche  & 12 oct. & Messe 09h30\\ \hline
+%\multicolumn{3}{c}{\textbf{Résidence Landsberg (3 rue Jean Monnet)} } \\ \hline
+%Mercredi & 01 oct. : & Messe 10h45 \\ \hline
+\end{tabular}
+
+\begin{framed}
+\begin{itemize}
+\item
+Dimanche 19 octobre : \emph{envoi en mission des jeunes} 10h00 \textbf{messe unique} à Sainte Croix
+\item Vendredi 14 novembre 19h00 : repas Harengs au foyer Ste Croix. Réservation avant le 07 novembre au 06 83 82 52 50 ou \texttt{foyer.sainte.croix@gmail.com}
+\end{itemize}
+\end{framed}
+
+\NewsItem{Répétitions des chorales}
+\begin{description}
+\item[Chorales paroissiales] : vendredi 20h15 à Sainte Croix
+\end{description}
+
+\input{\footer/footer}
+
+\newpage
+
+\JournalName{Communauté de Paroisses de Lingolsheim \\
+\normalsize \textit{Notre Dame des Sables}
+%\\ \large \'{E}glise Saint Jean-Baptiste
+\\  \normalsize \textit{27\ieme{} dimanche du Temps Ordinaire - C}
+\\ \large Dimanche 05 octobre 2025}
+%\noindent\HorRule{3pt} \\[-0.75\baselineskip]
+%\HorRule{1pt}
+% -----
+
+% Front article
+% -----
+%\vspace{0.5cm}
+%	\SepRule
+%\vspace{0.5cm}
+
+%\begin{center}
+\begin{minipage}[h]{1.0\linewidth}
+\setlength{\parindent}{1em}
+\input{edito}
+\end{minipage}
+%\end{center}
+% -----
+\end{document}
