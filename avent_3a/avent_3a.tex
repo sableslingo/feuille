@@ -1,0 +1,276 @@
+%%% ---------------
+%%% PREAMBLE
+%%% ---------------
+\documentclass[french,11pt]{article}
+
+% Define geometry (without using the geometry package)
+\usepackage[a4paper]{geometry}
+\geometry{landscape, twocolumn, textwidth=28.2cm, textheight=19.5cm, columnsep=16mm}
+
+%\frenchspacing						% better looking spacing
+
+% Call packages we'll need
+\usepackage{graphicx}				% images
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{url}					% clickable links
+\usepackage{marvosym}				% symbols
+\usepackage{wrapfig}				% wrapping text around figures
+\usepackage{fontspec}			% font encoding
+\usepackage{xunicode}
+\usepackage{phonenumbers}
+\usepackage[hidelinks]{hyperref}
+\usepackage{ragged2e}
+\usepackage{pst-barcode}
+\usepackage{titlesec}
+\usepackage{framed}
+%\usepackage[default]{raleway}
+\usepackage{tocvsec2}
+% Customize (header and) footer
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{fontawesome}
+\usepackage{lipsum}
+\usepackage{babel}
+%\usepackage{currency}
+%\pagestyle{fancy}
+\pagestyle{empty}
+\setmainfont{Carlito}
+\usepackage{caption}
+\captionsetup[table]{labelformat=empty}
+\setlist{nosep,noitemsep}
+
+%\newfontfamily\headingfont[]{Arial}
+%\titleformat*{\section}{\Large\bfseries\sffamily}
+%\titleformat*{\section}{\Large\headingfont}
+
+%\renewcommand{\headrulewidth}{0.0pt}	% no bar on top of page
+%\renewcommand{\footrulewidth}{0.4pt}	% bar on bottom of page
+
+%%% ---------------
+%%% DEFINITIONS
+%%% ---------------
+
+% Define separators
+
+% Define Title en News input
+\newcommand{\JournalName}[1]{%
+		\begin{center}
+			%\Huge \usefont{T1}{augie}{m}{n}
+            \Large \usefont{T1}{augie}{m}{n}
+			#1%
+		\end{center}
+		\par \normalsize \normalfont}
+
+\newcommand*{\chants}{../chants}
+%\newcommand*{\messe}{../messe_grace}
+\newcommand*{\messe}{../messe_soleil_des_nations}
+\newcommand*{\pu}{../pu}
+\newcommand*{\psaumes}{../psaumes}
+\newcommand*{\footer}{..}
+
+%\DefineCurrency{EUR}{name={euro}, plural={euros}, symbol={\euro}, iso={EUR}, kind=iso}
+
+\newcommand{\presbytere}{\textbf{Presbytère}}
+\newcommand{\sjb}{\textbf{St Jean-Baptiste}}
+\newcommand{\sx}{\textbf{Ste Croix}}
+\newcommand{\landsberg}{\textbf{Landsberg}}
+
+\newcommand{\NewsItem}[1]{%
+\vspace{3pt}
+\underline{\textbf{#1}}
+	%	%\usefont{T1}{augie}{m}{n}
+	%	\large \textbf{#1} %\vspace{3pt}
+   %     %\Large #1 \vspace{4pt}
+	%	%\par
+   %     \normalsize \normalfont
+		  }
+
+\newcommand{\NewsAuthor}[1]{%
+			\hfill by \textsc{#1} \vspace{4pt}
+			\par \normalfont}
+%\sisetup{locale=FR}
+%\sisetup{group-minimum-digits=3}
+
+\graphicspath{{../images/}}
+
+%pas de numérotation des sections
+\setsecnumdepth{none}
+\setlength{\parindent}{0pt}
+%%% ---------------
+%%% BEGIN DOCUMENT
+%%% ---------------
+\begin{document}
+
+\NewsItem{CHANT D'ENTRÉE}\\
+	\input{\chants/preparez_le_chemin_du_seigneur}
+
+\NewsItem{CHANT}\\
+	\input{\chants/comme_un_veilleur2}
+
+\NewsItem{PRÉPARATION PÉNITENTIELLE}\\
+	\input{\messe/kyrie}
+
+%\NewsItem{GLORIA}\\
+%	\input{\messe/gloria}
+
+
+% -----
+\NewsItem{1\iere{} LECTURE} Is 35, 1-6a.10
+% -----
+
+\NewsItem{PSAUME}
+\input{\psaumes/psaume_145_viens_seigneur}
+
+% -----
+\NewsItem{2\ieme{} LECTURE} Jc 5, 7-10
+
+\NewsItem{ACCLAMATION}\\
+%\input{\messe/alleluia}
+Réjouis toi Jérusalem Alléluia Alléluia Voici qu’il vient l’Emmanuel.
+
+\NewsItem{ÉVANGILE} Mt 11, 2-11
+
+\NewsItem{HOMÉLIE}
+
+\NewsItem{PROFESSION DE FOI}
+%\\ \input{\chants/je_crois_en_toi}
+
+%\newpage
+
+\NewsItem{PRIÈRES UNIVERSELLES}
+\input{\pu/viens_nous_sauver}
+%\input{\pu/souviens_toi}
+%\input{\pu/seigneur_donne}
+%\input{\pu/ecoute_la_priere}
+%\input{\pu/seigneur_ecoute}
+%\input{\pu/dans_ton_royaume}
+%\input{\pu/entends_nos_prieres}
+%\input{\pu/accueille_au_creux}
+%\input{\pu/par_ta_sainte_mere}
+
+\NewsItem{OFFERTOIRE}
+
+\NewsItem{PRIÈRES SUR LES OFFRANDES}\\
+\textit{Nous nous levons et nous répondons : }
+Que le Seigneur reçoive de vos mains ce sacrifice à la louange et à la gloire
+de Son nom, pour notre bien et celui de toute l’Église.
+
+
+\NewsItem{SANCTUS}
+\input{\messe/sanctus}
+
+\NewsItem{ANAMNÈSE}\\
+\input{\messe/anamnese}
+
+\NewsItem{NOTRE PÈRE}
+
+\NewsItem{AGNUS} 
+\input{\messe/agnus}
+
+\NewsItem{COMMUNION}\\
+%\NewsItem{COMMUNION} \textbf{orgue (samedi) - chant (dimanche)} \\
+\input{\chants/jean_le_baptiste}
+
+\NewsItem{ANNONCES PAROISSIALES}
+
+
+\NewsItem{CHANT D'ENVOI}\\
+\input{\chants/l_espoir_de_la_terre}
+
+\newpage
+
+%\NewsItem{Intentions de messe}
+%\begin{itemize}
+%%\item[\Cross] Famille GENNETAY -SOULARD  (\sx)
+%%\item[\Cross] Mme Monique DERRENDINGER (11h00)
+%\end{itemize}
+
+\begin{table}[!h]
+\centering
+%\caption{Informations paroissiales}
+\begin{tabularx}{\columnwidth}{|p{0.1\columnwidth}p{0.1\columnwidth}|p{0.19\columnwidth}p{0.07\columnwidth}X|}
+\hline
+%Mardi &  18 nov.  & \multicolumn{2}{c|}{ \emph{S. Martin de Tours, évêque} } \\
+Mardi & 16 déc. & \sjb & 18h15 & Vêpres \\
+& &      & 18h30 & Messe \\
+\hline
+%Mercredi &  10 déc.  & \multicolumn{2}{c|}{ \emph{S. François Xavier, prêtre} } \\
+%& & \sx		& Messe 09h00 \\
+Mercredi & 17 déc. & \sx & 09h00 & Messe \\
+\hline
+%Jeudi &  11 déc. &		\presbytere & Confessions 16h00 - 17h30 \\
+%Jeudi &  18 déc. &	\sjb &Salut au Saint Sacrement 18h15 \\
+%& &		&Messe 18h30 \\
+Jeudi &  18 déc. & \sx & 10h00 & Célébration pénitentiaire\newline Confession \\
+\hline
+%Vendredi &  28 nov.  & \multicolumn{2}{c|}{ \emph{Présentation de la Bienheureuse Vierge Marie} } \\
+%Vendredi &  19 déc.  & 	\sjb & Laudes 08h45 \\
+Vendredi &  19 déc. & \sjb & 19h00 & Célébration pénitentiaire\newline Confession \\
+%& & \sjb		& Laudes 08h45 \\
+%& &		& Messe 09h00 \\
+\hline
+Samedi & 20 déc.  & 	\presbytere & 15h00 & \emph{pas de confession} \\
+& & 	\sjb & 18h00 & Messe anticipée \\
+\hline
+Dimanche &  21 déc.  & 	\sx & 09h30 & Messe\\
+%Dimanche &  21 déc.  & &\multicolumn{2}{c|}{ \emph{4\ieme{} Dimanche de l'Avent} } \\
+%Dimanche &  16 nov.  &		\sx & Messe 09h30 \\
+\multicolumn{2}{|l|}{ \emph{4\ieme{} Dimanche de l'Avent} }  &		\sjb & 11h00 & Messe \\
+\hline
+\hline
+Mercredi & 24 déc.  & 	\sjb & 16h00 & Messe de la nuit anticipée animée par Véronique Reinbold\\
+& & 	\sx & 16h00 & Messe de la nuit anticipée avec crèche vivante \\
+\hline
+Jeudi & 25 déc.  & 	\sjb & 00h00 & Messe de la nuit \\
+\multicolumn{2}{|l|}{ \emph{Nativité du Seigneur} }  &		\sx & 10h00 & Messe du jour \\
+\hline
+Vendredi & 26 déc.  & 	\sjb & 08h45 & Messe \\
+\multicolumn{2}{|l|}{ \emph{Saint Étienne, premier martyr} }  &		& & \\
+\hline
+\end{tabularx}
+\end{table}
+
+%\begin{framed}
+\begin{itemize}
+\item
+\textbf{Concert} avec la chorale CHORENSTRA et la chorale des hommes de Molsheim le dim. 21 déc. à 17h00 à \sjb.
+%\item
+%\textbf{Confessions} au presbytère : les 1\iers{} jeudis du mois de 16h à 17h30. Les 3\iemes{} samedis du mois de 15h à 16h30.
+\end{itemize}
+%\end{framed}
+
+\NewsItem{Répétitions des chorales}
+\begin{description}
+\item[Chorales paroissiales] : vendredi 20h15 à Sainte Croix
+\end{description}
+
+\input{\footer/footer}
+
+\newpage
+
+\JournalName{Communauté de Paroisses de Lingolsheim 
+%\\ \normalsize \textit{Notre Dame des Sables}
+%\\ \large \'{E}glise Saint Jean-Baptiste
+\\  \normalsize \textit{3\ieme{} Dimanche de l'Avent, de Gaudete - A}
+- \large Dim. 14 déc. 2025}
+%\\ \large Dimanche 30 novembre 2025}
+%\noindent\HorRule{3pt} \\[-0.75\baselineskip]
+%\HorRule{1pt}
+% -----
+
+% Front article
+% -----
+%\vspace{0.5cm}
+%	\SepRule
+%\vspace{0.5cm}
+
+%\begin{center}
+\begin{minipage}[h]{1.0\linewidth}
+\setlength{\parindent}{1em}
+\input{edito}
+\end{minipage}
+%\end{center}
+% -----
+\end{document}
